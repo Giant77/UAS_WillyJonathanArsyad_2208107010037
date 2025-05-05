@@ -22,7 +22,7 @@ root
 ├── app.py                  # Frontend dengan Streamlit
 ├── backend/
 │   └── main.py             # Backend API menggunakan FastAPI
-├── requirements.txt        # Dependensi backend
+├── requirements.txt        # Dependensi project
 
 ```
 
