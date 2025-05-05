@@ -52,7 +52,7 @@ language = st.selectbox(
 # 6. tingkat urgensi (opsional)
 urgency = st.selectbox(
     "Tingkat Urgensi",
-    ["Biasa", "Tinggi", "Rendah"]
+    ["Normal", "Tinggi", "Rendah"]
 )
 
 # 7. poin-poin utama (pisah baris baru)
