@@ -73,6 +73,7 @@ example = st.text_area(
 if st.button("✉️ Buat Email"):
     if not (recipient and subject and points):
         st.error("Mohon isi paling tidak: Kepada, Subjek, dan Poin-poin isi email.")
+        
     else:
         # susun payload
         payload = {
@@ -100,7 +101,9 @@ if st.button("✉️ Buat Email"):
             # tampilkan hasil
             st.subheader("📄 Hasil Email")
             st.markdown(data.get("generated_email", "– Tidak ada output –"))
+
         except requests.exceptions.HTTPError as e:
             st.error(f"Server Error {response.status_code}: {response.text}")
+
         except requests.exceptions.RequestException as e:
             st.error(f"Gagal menghubungi server: {e}")
